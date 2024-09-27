@@ -1,0 +1,16 @@
+/* 
+Palette de couleurs (Created by Snowy Owl):
+    #272946 bleu sombre
+    #eda031 jaune dorée
+    #e7ffee cyan pale
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+
+body{
+    background-color: #272946;
+}

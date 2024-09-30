@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <h1>Formulaire de contact</h1>
+
+    <form name="contact" method="post">
+        <input type="text" name="nom" placeholder="Votre nom" pattern="^[a-zA-Z]+(-|'){0,1}[a-zA-Z]+$" required><br>
+        <input type="text" name="prenom" placeholder="Votre prenom" pattern="^[a-zA-Z]+(-|'){0,1}[a-zA-Z]+$" required><br>
+        <input type="email" name="email" placeholder="Votre email" required><br>
+        <input type="text" name="adresse" placeholder="Votre adresse"><br>
+        <input type="tel" name="telephone" placeholder="Votre numero de telephone" pattern="^[0-9]{10}$"><br>
+
+        <input type="submit" name="soumettre"></submit>
+    </form>
+
+    <a href="../index.html">Retour au CV</a>
+</body>
+</html>

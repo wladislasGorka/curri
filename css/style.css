@@ -12,7 +12,7 @@ Palette de couleurs (Created by Snowy Owl):
     font-size: x-large;
 }
 
-body,aside,h1,section{
+body,aside,header,section{
     border-radius: 10px;
 }
 
@@ -51,22 +51,26 @@ main > section{
     padding: 10px 10px 30px 10px;
 }
 
-h1{
-    text-align: center;
+header{
     background-color: #eda031;
-    font-size: xx-large;
-    margin-bottom: 20px;
+    text-align: center;
     padding: 20px;
+}
+h1{    
+    font-size: xx-large;    
 }
 h2{
     margin-bottom: 10px;
 }
+h3{
+    margin: 20px 0px 10px 0px;
+}
+h4{
+    font-size: smaller;
+}
 hr{
     color: #eda031;
     margin-bottom: 20px;
-}
-h3{
-    margin: 20px 0px 10px 0px;
 }
 
 p, main > section > ul, li > ul, td{

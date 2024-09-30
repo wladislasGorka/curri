@@ -11,7 +11,7 @@
     <form name="contact" method="post">
         <input type="text" name="nom" placeholder="Votre nom" pattern="^[a-zA-Z]+(-|'){0,1}[a-zA-Z]+$" required><br>
         <input type="text" name="prenom" placeholder="Votre prenom" pattern="^[a-zA-Z]+(-|'){0,1}[a-zA-Z]+$" required><br>
-        <input type="email" name="email" placeholder="Votre email" required><br>
+        <input type="email" name="email" placeholder="Votre email" pattern="^(\w)+((\.){0,1}(\w)+)*@(\w)+\.(\w)+$" required><br>
         <input type="text" name="adresse" placeholder="Votre adresse"><br>
         <input type="tel" name="telephone" placeholder="Votre numero de telephone" pattern="^[0-9]{10}$"><br>
 
@@ -21,3 +21,9 @@
     <a href="../index.html">Retour au CV</a>
 </body>
 </html>
+
+<!-- Test pattern
+ mail
+/^([a-zA-Z]|[0-9])+((\.){0,1}([a-zA-Z]|[0-9])+)*@([a-zA-Z]|[0-9])+\.([a-zA-Z]|[0-9])+$/gm
+^(\w)+((\.){0,1}(\w)+)*@(\w)+\.(\w)+$
+-->

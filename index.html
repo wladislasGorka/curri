@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../bulma-1.0.2/bulma/css/bulma.min.css" type="text/css" >
+        <link rel="stylesheet" href="bulma-1.0.2/bulma/css/bulma.min.css" type="text/css" >
         <link rel="stylesheet" href="css/styleV2.css" type="text/css" >
         <title>CV</title>
     </head>
@@ -22,11 +22,13 @@
         </header>
 
         <div class="columns">
-            <main class="column is-8 block"> 
+            <div class="column is-1  px-0"></div>
+
+            <main class="column is-7 block px-0"> 
                 
                 <article class="message is-dark">
                     <div class="message-header">
-                        <p class="title is-4">Profil</p>
+                        <p class="title is-4 has-text-white">Profil</p>
                     </div>
                     <div class="message-body">
                         <p class="content">Développeur Web Junior, avec une formation universitaire complétée par une formation profesionnalisante.</p>
@@ -35,29 +37,33 @@
 
                 <section class="message is-dark">
                     <div class="message-header">
-                        <p class="title is-4">Formation</p>
+                        <p class="title is-4 has-text-white">Formation</p>
                     </div>
                     <div class="message-body">
 
                         <article class="message is-dark">
                             <div class="message-header">
-                                <p class="title is-6">Bac S</p>
+                                <p class="title is-6 has-text-white">Bac S</p>
                             </div>
                             <div class="message-body">
-                                <p class="content">Lycée Henri IV, Béziers</p>
+                                <p class="content mb-2">Lycée Henri IV, Béziers</p>
+                                <p class="content mb-0">Spécialité: Physique-Chimie</p>
+                                <p class="content">Mention: Bien</p>
                             </div>
                         </article>
                         <article class="message is-dark">
                             <div class="message-header">
-                                <p class="title is-6">Licence Info</p>
+                                <p class="title is-6 has-text-white">Licence informatique générale</p>
                             </div>
                             <div class="message-body">
-                                <p class="content">Université des sciences, Montpellier</p>
+                                <p class="content mb-2">Université des sciences, Montpellier</p>
+                                <p class="content mb-2">Réalisation d'un site d'organisation de tournoi de Volley-ball (full-stack,PHP et MySQL)</p>
+                                <p class="content mb-2">Jeu Othello (NodeJS)</p>
                             </div>
                         </article>
                         <article class="message is-dark">
                             <div class="message-header">
-                                <p class="title is-6">Formation Beweb</p>
+                                <p class="title is-6 has-text-white">Formation Beweb</p>
                             </div>
                             <div class="message-body">
                                 <p class="content">IUT de Béziers</p>
@@ -69,44 +75,41 @@
                 <section class="block">
                     <article class="message is-dark">
                         <div class="message-header">
-                            <h2 class="title is-4">Compétences</h2>
+                            <h2 class="title is-4 has-text-white">Compétences</h2>
                         </div>
                         <div class="message-body">
-                            <table class="table">
-                                <tr>
-                                    <th>HTML/CSS</th>
-                                    <td></td>
-                                    <td>Expert</td>
-                                </tr>
-                                <tr>
-                                    <th>Javascript</th>
-                                    <td></td>
-                                    <td>Expert</td>
-                                </tr>
-                                <tr>
-                                    <th>PHP</th>
-                                    <td></td>
-                                    <td>Intermédiaire</td>
-                                </tr>
-                                <tr>
-                                    <th>MySql</th>
-                                    <td></td>
-                                    <td>Intermédiaire</td>
-                                </tr>   
-                                <tr>
-                                    <th>Algorithme</th>
-                                    <td></td>
-                                    <td>Intermédiaire</td>
-                                </tr>                  
-                            </table>
+                            <div class="columns">
+                                <section class="column is-1">
+
+                                </section>
+                                <section class="column is-3">
+                                    <p>HTML\CSS</p>
+                                    <p>PHP</p>
+                                    <p>Java</p>
+                                    <p>MySQL</p>
+                                    <p>Algorithme</p>
+                                    <p>Bulma</p>
+                                </section>
+                                <section class="column is-1">
+
+                                </section>
+                                <section class="column is-7">
+                                    <p>Expert</p>
+                                    <p>Intermédiaire</p>
+                                    <p>Expert</p>
+                                    <p>Intermédiaire</p>
+                                    <p>Expert</p>
+                                    <p>Intermédiaire</p>
+                                </section>
+                            </div>
                         </div>                    
                     </article>                
                 </section>
             </main>
 
-            <aside class="column is-4">
+            <aside class="column is-3 px-0">
                 
-                <div class="notification is-warning">
+                <div class="notification is-warning px-3">
 
                     <article class="message is-dark">
                         <section class="block">
@@ -137,6 +140,8 @@
                     </article>
                 </div>
             </aside>
+
+            <div class="column is-1 px-0"></div>
         </div>
     </body>
 </html>

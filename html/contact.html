@@ -3,22 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <link rel="stylesheet" href="../bulma-1.0.2/bulma/css/bulma.min.css" type="text/css">
+    <title>CV GORKA - Contact</title>
 </head>
 <body>
-    <h1>Formulaire de contact</h1>
+    <!-- en-tete (identique à index.html) -->
+    <header class="block">
+        <section class="hero is-warning">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title is-1">Wladislas GORKA</h1>
+                    <h3 class="subtitle is-3">Web Dev Junior</h3>
+                </div>
+            </div>
+        </section>
+    </header>
 
-    <form name="contact" method="post">
-        <input type="text" name="nom" placeholder="Votre nom" pattern="^[a-zA-Z]+(-|'){0,1}[a-zA-Z]+$" required><br>
-        <input type="text" name="prenom" placeholder="Votre prenom" pattern="^[a-zA-Z]+(-|'){0,1}[a-zA-Z]+$" required><br>
-        <input type="email" name="email" placeholder="Votre email" pattern="^(\w)+((\.){0,1}(\w)+)*@(\w)+\.(\w)+$" required><br>
-        <input type="text" name="adresse" placeholder="Votre adresse"><br>
-        <input type="tel" name="telephone" placeholder="Votre numero de telephone" pattern="^[0-9]{10}$"><br>
+    <header>
+        <h1 class="title is-1 has-text-centered">Formulaire de contact</h1>
+    </header>
 
-        <input type="submit" name="soumettre"></submit>
-    </form>
+    <!-- Corps de la page en 4 colonnes (dont 2 pour les marges latérales) -->
+    <main class="columns">
+        <!-- Marge à gauche -->
+        <div class="column is-2">
+        </div>
+        <div class="column is-8">
+            <div class="box has-background-dark">
+            <!-- Formulaire de contact -->
+            <form name="contact" method="post">
+                <div class="columns">
+                    <section class="column is-6">
+                        <input class="mb-2" type="text" name="nom" placeholder="Nom *" pattern="^[a-zA-Z]+(-|'){0,1}[a-zA-Z]+$" required><br>
+                        <input class="" type="text" name="prenom" placeholder="Prenom *" pattern="^[a-zA-Z]+(-|'){0,1}[a-zA-Z]+$" required><br>
+                    </section>
+                    <section class="column is-6">
+                        <input class="mb-2" type="email" name="email" placeholder="Email *" pattern="^(\w)+((\.){0,1}(\w)+)*@(\w)+\.(\w)+$" required><br>
+                        <input class="mb-2" type="text" name="adresse" placeholder="Adresse"><br>
+                        <input type="tel" name="telephone" placeholder="Telephone (0612121212)" pattern="^[0-9]{10}$"><br>
+                    </section>
+                </div>
+                <div class="columns">
+                    <section class="column is-12">
+                        <textarea name="comment" cols="40" rows="5" placeholder="Commentaire"></textarea>
+                    </section>
+                </div>
+                <div class="columns">
+                    <section class="column is-12">
+                        <input type="submit" name="soumettre" class="button is-warning"></submit>
+                        <p class="content is-small ml-4">* Champs Obligatoire</p>
+                    </section>                    
+                </div>
+            </form>
+            </div>
+        </div>
+        <!-- Marge à droite -->
+        <div class="column is-2">
+        </div>
+    </main>
 
-    <a href="../index.html">Retour au CV</a>
+    <!-- Bouton de retour à la page index.html -->
+    <footer>
+        <a href="../index.html" class="button is-warning is-small is-outlined">Retour au CV</a>
+    </footer>
 </body>
 </html>
 

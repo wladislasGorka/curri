@@ -4,46 +4,49 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="bulma-1.0.2/bulma/css/bulma.min.css" type="text/css" >
-        <link rel="stylesheet" href="css/styleV2.css" type="text/css" >
-        <title>CV</title>
+        <link rel="stylesheet" href="bulma-1.0.2/bulma/css/bulma.min.css" type="text/css">
+        <!-- <link rel="stylesheet" href="css/styleV2.css" type="text/css"> -->
+        <title>CV GORKA</title>
     </head>
 
     <body>
+        <!-- en-tete  -->
         <header class="block">
             <section class="hero is-warning">
-            <div class="hero-body">
-                <div class="container">
-                <h1 class="title is-1">Wladislas GORKA</h1>
-                <h2 class="subtitle is-3">Web Dev Junior</h2>
+                <div class="hero-body">
+                    <div class="container">
+                        <h1 class="title is-1">Wladislas GORKA</h1>
+                        <h3 class="subtitle is-3">Web Dev Junior</h3>
+                    </div>
                 </div>
-            </div>
             </section>
         </header>
 
+        <!-- Corps de la page en 4 colonnes (dont 2 pour les marges latérales) -->
         <div class="columns">
+            <!-- marge à gauche -->
             <div class="column is-1  px-0"></div>
 
+            <!-- Partie principale -->
             <main class="column is-7 block px-0"> 
-                
+                <!-- Profil, message de présentation -->
                 <article class="message is-dark">
                     <div class="message-header">
-                        <p class="title is-4 has-text-white">Profil</p>
+                        <h4 class="title is-4 has-text-warning">Profil</h4>
                     </div>
                     <div class="message-body">
                         <p class="content">Développeur Web Junior, avec une formation universitaire complétée par une formation profesionnalisante.</p>
                     </div>
                 </article>            
-
-                <section class="message is-dark">
+                <!-- Détail du parcours et des formations -->
+                <article class="message is-dark">
                     <div class="message-header">
-                        <p class="title is-4 has-text-white">Formation</p>
+                        <h4 class="title is-4 has-text-warning">Formation</h4>
                     </div>
                     <div class="message-body">
-
                         <article class="message is-dark">
                             <div class="message-header">
-                                <p class="title is-6 has-text-white">Bac S</p>
+                                <h6 class="title is-6 has-text-warning">Bac S</h6>
                             </div>
                             <div class="message-body">
                                 <p class="content mb-2">Lycée Henri IV, Béziers</p>
@@ -53,7 +56,7 @@
                         </article>
                         <article class="message is-dark">
                             <div class="message-header">
-                                <p class="title is-6 has-text-white">Licence informatique générale</p>
+                                <h6 class="title is-6 has-text-warning">Licence informatique générale</h6>
                             </div>
                             <div class="message-body">
                                 <p class="content mb-2">Université des sciences, Montpellier</p>
@@ -63,25 +66,26 @@
                         </article>
                         <article class="message is-dark">
                             <div class="message-header">
-                                <p class="title is-6 has-text-white">Formation Beweb</p>
+                                <h6 class="title is-6 has-text-warning">Formation Beweb</h6>
                             </div>
                             <div class="message-body">
                                 <p class="content">IUT de Béziers</p>
                             </div>
                         </article>
                     </div>
-                </section>
-
+                </article>
+                <!-- Détails des compétences liées à l'informatique -->
                 <section class="block">
                     <article class="message is-dark">
                         <div class="message-header">
-                            <h2 class="title is-4 has-text-white">Compétences</h2>
+                            <h4 class="title is-4 has-text-warning">Compétences</h4>
                         </div>
                         <div class="message-body">
                             <div class="columns">
+                                <!-- Marge à gauche -->
                                 <section class="column is-1">
-
                                 </section>
+                                <!-- Intitulé de la compétence -->
                                 <section class="column is-3">
                                     <p>HTML\CSS</p>
                                     <p>PHP</p>
@@ -90,9 +94,10 @@
                                     <p>Algorithme</p>
                                     <p>Bulma</p>
                                 </section>
+                                <!-- Marge centrale -->
                                 <section class="column is-1">
-
                                 </section>
+                                <!-- Niveau associé à la compétence -->
                                 <section class="column is-7">
                                     <p>Expert</p>
                                     <p>Intermédiaire</p>
@@ -107,14 +112,14 @@
                 </section>
             </main>
 
-            <aside class="column is-3 px-0">
-                
-                <div class="notification is-warning px-3">
-
-                    <article class="message is-dark">
-                        <section class="block">
+            <!-- Colonne de droite, infos complémentaires -->
+            <aside class="column is-3 px-0">                
+                <section class="notification is-warning px-3">                    
+                    <section class="message is-dark">
+                        <!-- Contacts principaux et bouton vers page contact -->
+                        <article class="block">
                             <div class="message-header">
-                                <p class="title is-6">Contacts</p>
+                                <h6 class="title is-6 has-text-white">Contacts</h6>
                             </div>
                             <div class="message-body">
                                 <section class="block">
@@ -124,23 +129,25 @@
                                     <p class="content is-small">06 12 12 12 12</p>                                    
                                 </section>
                                 <section class="block">
-                                    <a href="#"><button class="button is-warning">=> contact</button></a>
+                                    <a href="html/contact.html" class="button is-warning">=> contact</a>
                                 </section>
                             </div>
-                        </section>
-                        <section class="block">
+                        </article>
+                        <!-- Qualités (Compétences transversales) -->
+                        <article class="block">
                             <div class="message-header">
-                                <p class="title is-6">Qualités</p>
+                                <h6 class="title is-6 has-text-white">Qualités</h6>
                             </div>
                             <div class="message-body">
                                 <p class="content mb-1">Attentif</p>
                                 <p class="content">Curieux</p>
                             </div>
-                        </section>
-                    </article>
-                </div>
+                        </article>
+                    </section>
+                </section>
             </aside>
 
+            <!-- Marge de droite -->
             <div class="column is-1 px-0"></div>
         </div>
     </body>
